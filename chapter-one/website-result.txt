@@ -1,0 +1,6 @@
+0.36s    1888 https://pahe.li
+0.57s    6666 https://animepahe.com
+0.73s  676240 https://youtube.com
+0.75s  125467 https://twitter.com
+1.73s  112516 https://twitch.com
+1.73 elapsed

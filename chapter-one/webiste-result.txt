@@ -1,0 +1,8 @@
+0.35s     633 https://b54.co
+0.35s    1888 https://pahe.li
+0.44s    6666 https://animepahe.com
+0.79s  125733 https://twitter.com
+1.32s  682788 https://youtube.com
+1.50s    6591 https://amazon.com
+1.76s  112516 https://twitch.com
+1.76 elapsed

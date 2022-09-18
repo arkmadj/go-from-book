@@ -12,13 +12,19 @@ import (
 func main() {
 	start := time.Now()
 	ch := make(chan string)
+	file, err := os.Create("webiste-result.txt")
+	if err != nil {
+		fmt.Printf("while creating file: %v", err)
+	}
+	defer file.Close()
+
 	for _, url := range os.Args[1:] {
 		go fetch(url, ch)
 	}
 	for range os.Args[1:] {
-		fmt.Println(<-ch)
+		fmt.Fprintln(file, <-ch)
 	}
-	fmt.Printf("%.2f elapsed\n", time.Since(start).Seconds())
+	fmt.Fprintf(file, "%.2f elapsed\n", time.Since(start).Seconds())
 }
 
 func fetch(url string, ch chan<- string) {
